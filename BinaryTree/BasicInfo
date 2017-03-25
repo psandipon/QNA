@@ -1,0 +1,27 @@
+A complete binary tree is very special tree, it provides the best possible ratio between the number of nodes and the height. The height h of a complete binary tree with N nodes is at most O(log N). We can easily prove this by counting nodes on each level, starting with the root, assuming that each level has the maximum number of nodes:
+
+n = 1 + 2 + 4 + ... + 2^(h-1) + 2^h = 2^(h+1) - 1
+Solving this with respect to h, we obtain
+
+h = O(log n)
+where the big-O notation hides some superfluous details.
+
+
+There are three different types of depth-first traversals :
+
+PreOrder traversal - visit the parent first and then left and right children;
+InOrder traversal - visit the left child, then the parent and the right child;
+PostOrder traversal - visit left child, then the right child and then the parent;
+
+An example:
+                8
+          5               4
+      9       7              11
+            1    12       3
+               2
+               
+PreOrder - 8, 5, 9, 7, 1, 12, 2, 4, 11, 3 
+InOrder - 9, 5, 1, 7, 2, 12, 8, 4, 3, 11 
+PostOrder - 9, 1, 2, 12, 7, 5, 3, 11, 4, 8 
+LevelOrder - 8, 5, 4, 9, 7, 11, 1, 12, 3, 2	  
+
