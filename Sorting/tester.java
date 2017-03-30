@@ -7,11 +7,15 @@ public class tester {
 		
 		int[] arr = generateRandomArray();
 
-		printArray(arr,"Array Before Bubble Sort");
-	
-		arr = new BubbleSort().Sort(arr); // using bubble sort
-											
-		printArray(arr,"Array After Bubble Sort");
+		printArray(arr,"Array Before Sort");
+		arr = new BubbleSort().Sort(arr); // using bubble sort							
+		printArray(arr,"Array After Sort");
+		
+		printArray(arr,"Array Before Sort");
+		arr = new InsertionSort().Sort(arr); // using Insertion sort							
+		printArray(arr,"Array After Sort");
+		
+		
 
 	}
 
