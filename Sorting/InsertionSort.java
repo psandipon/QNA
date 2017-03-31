@@ -2,7 +2,7 @@ package Sorting;
 
 public class InsertionSort {
 
-	static int[] Sort(int[] arr) {
+	public int[] Sort(int[] arr) {
         int temp;
         for (int i = 1; i < arr.length; i++) {
             for(int j = i ; j > 0 ; j--){
