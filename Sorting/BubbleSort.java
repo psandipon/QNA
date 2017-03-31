@@ -1,6 +1,6 @@
 package Sorting;
 public class BubbleSort {  
-    static int [] Sort(int[] arr) {  
+    public int [] Sort(int[] arr) {  
         int n = arr.length;  
         int temp = 0;  
          for(int i=0; i < n; i++){  
